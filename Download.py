@@ -12,7 +12,7 @@ while True:
         print('非法参数！即将退出程序！！！')
         time.sleep(5)
         sys.exit()
-    url='http://dl.stickershop.line.naver.jp/products/0/0/1/{}/android/stickers.zip'.format(stickers_id)
+    url='http://dl.stickershop.line.naver.jp/products/0/0/1/{}/iphone/stickers@2x.zip'.format(stickers_id)
     zipper = r.get(url).content
     try:
         with open( stickers_id + '.zip', 'wb') as f:
